@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample exercise</title>
+    <style> 
+    body{
+        font-family: sans-serif;
+        text-align : center
+    }
+    h4 {
+        color: purple
+    }
+        </style>
+</head>
+<body>
+    <h4> Your piece of random advice is ....</h4>
+    <h1>SAMPLE ADVICE</h1>
+    <script>
+     //document.querySelector('h1')
+
+     /* eslint-disable*/
+    
+     async function getAdvice() {
+         const adviceResponse = await fetch('http:/api.adviceslip.com/advice') //get bytes 
+         const playloadObj =await adviceRespon.json(); //convert bytes to objects 
+         return playloadObj.slip.advice 
+
+     }
+
+    </script>
+   
+    
+</body>
+
+</html>
